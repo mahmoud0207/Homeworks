@@ -1,25 +1,50 @@
-1--
-<a href="https://www.google.com">Google</a>
 
-
-2--
-<a href="/about">About Us</a>
-
-
-3--
-<a href="tel:+1234567890">Call us</a>
-
-
-4--
-<a href="#" onclick="alert('Hello, world!');">Click me</a>
-
-
-5--
-<ah ref="mailto:example@example.com?subject= Hello&body= How are you?">Email us</a>
-
-
+<style>
+    html{
+        scroll-behavior: smooth;
+    }
+            div{
     
-6--
-<a href="https://www.google.com" target="_blank">Google</a>
-
-
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+            }
+            a{
+                color: black;
+    font-size: 25px;
+    text-decoration: none;
+    
+            }
+    
+    #section1{
+        background-color: blueviolet;
+    
+        height: 100vh;
+    }
+            section{
+                height: 100vh;
+                background-color: antiquewhite;
+            }
+        </style>
+        <section id="section1">
+            <div class="anchor">
+                <a href="https://www.example.com">Link to another site</a>
+                <a href="#section2">Link to a specific anchor on the same page</a>
+                
+             
+            </div>
+        
+        </section>
+      
+        <section id="section2">
+       <div>
+    
+           <a href="tel:+1234567890">Click to dial a number</a>
+           <a href="javascript:alert('Hello, World!');">Click to run JavaScript</a>
+           <a href="mailto:example@example.com">Click to open email client</a>
+           
+           
+           <a href="https://www.example.com" target="_blank">Open link in a new tab/window</a>
+       </div>
+        </section>
+    

@@ -1,29 +1,43 @@
-1--
-<form action="/submit-form" method="GET" target="_blank">
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Example</title>
+</head>
+<body>
+  <form action="" method="post" target="_blank">
     <label for="name">Name:</label>
-    <input type="text" id="name" name="name"><br><br>
+    <input type="text" id="name" name="name" required><br><br>
+    
     <label for="email">Email:</label>
-    <input type="text" id="email" name="email"><br><br>
-    <input type="submit" value="Submit using GET">
+    <input type="email" id="email" name="email" required><br><br>
+    
+    <input type="submit" value="Submit">
   </form>
-  
-  <form action="/submit-form" method="POST" target="_self">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name"><br><br>
-    <label for="email">Email:</label>
-    <input type="text" id="email" name="email"><br><br>
-    <input type="submit" value="Submit using POST">
-  </form>
-  
+</body>
+</html>
 
-  2--
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Canvas Example</title>
+</head>
+<body>
   <canvas id="myCanvas" width="400" height="400"></canvas>
 
-<script>
-var canvas = document.getElementById('myCanvas');
-var ctx = canvas.getContext('2d');
-
-ctx.beginPath();
-ctx.arc(100, 75, 50, 0, 2 * Math.PI);
-ctx.stroke();
-</script>
+  <script>
+    const canvas = document.getElementById('myCanvas');
+    const ctx = canvas.getContext('2d');
+    
+    // Draw a red rectangle
+    ctx.fillStyle = 'red';
+    ctx.fillRect(50, 50, 200, 200);
+    
+    // Draw a blue circle
+    ctx.fillStyle = 'blue';
+    ctx.beginPath();
+    ctx.arc(200, 200, 100, 0, 2 * Math.PI);
+    ctx.fill();
+  </script>
+</body>
+</html>
